@@ -1,0 +1,7 @@
+streamlit
+requests
+praw
+tweepy
+google.generativeai
+requests
+streamlit
