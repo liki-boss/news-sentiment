@@ -17,7 +17,7 @@ class DiscussionAnalyzer:
         response = self.model.generate_content(
             f"Summarize the following discussions: {self.combined_text} \n \n "
             f"I want to know the main points of the discussions that are relevant and based around {self.news_topic}, "
-            "so give me an abridged version of it in no more than a paragraph. Do not include any formulas, just plain concise textual justification"
+            "so give me an abridged version of it in no more than a paragraph. Do not include any formulas, just short, plain, and concise textual justification"
         )
         return response.text
 
@@ -26,7 +26,7 @@ class DiscussionAnalyzer:
         response = self.model.generate_content(
             f"Analyze the sentiment of the following discussions and justify your response in a few sentences: {self.combined_text}. "
             f"It should be based on the overall tone of the discussions and the emotions expressed, at the same time relevant to the main topic {self.news_topic}. "
-            "Do not give me any formulas, just plain concise textual justification."
+            "Do not give me any formulas, just short, plain, and concise textual justification."
         )
         return response.text
 
@@ -35,7 +35,7 @@ class DiscussionAnalyzer:
         response = self.model.generate_content(
             f"Identify actionable needs from the following discussions: {self.combined_text} \n \n "
             "Give me only a few pointers that gives the most actionable needs structured around the main title {self.news_topic}. "
-            "Do not give me any formulas, just plain concise textual actionable needs in the form of pointers (avoid giving me sub-pointers)."
+            "Do not give me any formulas, just short, plain, and concise textual actionable needs in the form of pointers (avoid giving me sub-pointers)."
         )
         return response.text
 
