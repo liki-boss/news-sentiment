@@ -21,11 +21,3 @@ class NewsFetcher:
         else:
             print(f"Error fetching news: {response.status_code}")
             return []
-
-# Example usage
-if __name__ == "__main__":
-    api_key = "7c7cc70289dc4cffb8de20e3539f8bd6"  # Replace with your actual API key
-    news_fetcher = NewsFetcher(api_key)
-    city_name = "Bengaluru"  # Example city
-    trending_topics = news_fetcher.get_trending_topics(city_name)
-    print("Trending Topics:", trending_topics)
