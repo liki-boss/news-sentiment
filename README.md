@@ -16,7 +16,7 @@ The goal of this project is to create a dashboard that allows users to analyze p
 
 4. **Task 4 - Build a Simple Front-End**: The final step is to build a simple web-based interface using Streamlit. The user can input the name of the city and select the discussion platform (Reddit or Twitter). Upon pressing a button, the results of the analysis are displayed, showing the news summary, sentiment analysis, and identified actionable needs.
 
-This approach allows the political organization to gain insights into the discussions and sentiments surrounding a topic in a specific city, enabling them to better understand public opinion and take actionable steps based on the findings.
+This approach could be tweaked to refine the fetching of news articles relevant to the political organization to gain insights into the discussions and sentiments surrounding a topic in a specific city, enabling them to better understand public opinion and take actionable steps based on the findings.
 
 
 ## Task Breakdown
