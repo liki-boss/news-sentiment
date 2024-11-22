@@ -4,6 +4,21 @@
 
 The **City News Analyzer** is a tool designed to analyze public discussions around trending news topics in a specific city. The tool gathers news topics, fetches related public discussions from Reddit, analyzes sentiments, and identifies actionable needs. The aim is to provide insights to political organizations, allowing them to better understand public opinion, sentiment, and demands for a given city.
 
+## Approach
+
+The goal of this project is to create a dashboard that allows users to analyze public discussions and sentiments related to specific topics in a given city. The process is divided into four tasks: gathering relevant news topics, collecting discussions from public forums, analyzing the discussions, and displaying the results in an easy-to-understand front-end interface.
+
+1. **Task 1 - Gather Data**: The first step involves identifying the top news topics for a specific city. For this, a reliable news source API is used to fetch trending news that is currently being discussed. The city name is used as a search parameter to gather city-specific topics.
+
+2. **Task 2 - Gather Relevant Discussions**: Once the top news topics are identified, the next step is to gather discussions from public forums such as Reddit. For each topic found, relevant posts and comments are scraped to gather a comprehensive view of public opinion. The Reddit API is used to fetch these discussions and their associated comments.
+
+3. **Task 3 - Analyze Gathered Information**: The third step involves analyzing the collected discussions. This is done by summarizing the key points of the discussions, determining the overall sentiment (whether people are happy, unhappy, or dissatisfied), and identifying actionable needs or demands expressed by the public. This analysis is performed using a language model to generate concise summaries and sentiment assessments.
+
+4. **Task 4 - Build a Simple Front-End**: The final step is to build a simple web-based interface using Streamlit. The user can input the name of the city and select the discussion platform (Reddit or Twitter). Upon pressing a button, the results of the analysis are displayed, showing the news summary, sentiment analysis, and identified actionable needs.
+
+This approach allows the political organization to gain insights into the discussions and sentiments surrounding a topic in a specific city, enabling them to better understand public opinion and take actionable steps based on the findings.
+
+
 ## Task Breakdown
 
 ### Task 1: Gather Data
